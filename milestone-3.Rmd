@@ -1,0 +1,21 @@
+---
+title: "Milestone 3"
+author: "Bernadette Stadler"
+date: "10/3/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(readxl)
+```
+
+``` {r msl, include = FALSE}
+mls_salaries <- read_excel("MLS_Salaries.xlsx")
+
+```
+
+For my project, I am intersted in looking into the difference in salaries between male and female professional soccer players in the United States. In the wake of the World Cup and the U.S. National Women's Soccer Team's lawsuit against U.S. Soccer for equal pay, there has been a lot of discussion about whether or not female soccer players actually make less than men, since their compensation structures are different. Leaving aside the question of national team compensation, I would like to look at athelete compensation in the American professional soccer leagues (men's Major League Soccer (MLS) and women's National Women's Soccer League (NWSL)).
+
+Unfortunatelty it has been pretty difficult to get my hands on data for female soccer player salaries. There are a lot of articles on the internet that discuss the issue of female soccer players' compendatoin, but I have had a hard time finding the raw data that they used. I spoke with Georgie about this issue, and she suggested finding specific useful webpages that I could scrape to get the necessary data. I have found a few candidate websites, and plan on going to one of the CF's office hours in the near future to figure out my next steps. On the other hand, it has been pretty easy to get my hands on data for men's salaries. I have read in a file with MLS salaries from 2007 to 2018.
