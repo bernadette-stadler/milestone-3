@@ -11,11 +11,21 @@ library(tidyverse)
 library(readxl)
 ```
 
-``` {r msl, include = FALSE}
+``` {r data, include = TRUE}
 mls_salaries <- read_excel("MLS_Salaries.xlsx")
+
+world_cup_results <- read_excel("FIFA Womens' World Cup Results.xlsx")
+
+womens_squads <- read_excel("Womens Squads.xlsx")
+
+uswnt_players <- womens_squads %>% 
+  filter %>% 
+  filter(Country == "US")
 
 ```
 
 For my project, I am intersted in looking into the difference in salaries between male and female professional soccer players in the United States. In the wake of the World Cup and the U.S. National Women's Soccer Team's lawsuit against U.S. Soccer for equal pay, there has been a lot of discussion about whether or not female soccer players actually make less than men, since their compensation structures are different. Leaving aside the question of national team compensation, I would like to look at athelete compensation in the American professional soccer leagues (men's Major League Soccer (MLS) and women's National Women's Soccer League (NWSL)).
 
-Unfortunatelty it has been pretty difficult to get my hands on data for female soccer player salaries. There are a lot of articles on the internet that discuss the issue of female soccer players' compendatoin, but I have had a hard time finding the raw data that they used. I spoke with Georgie about this issue, and she suggested finding specific useful webpages that I could scrape to get the necessary data. I have found a few candidate websites, and plan on going to one of the CF's office hours in the near future to figure out my next steps. On the other hand, it has been pretty easy to get my hands on data for men's salaries. I have read in a file with MLS salaries from 2007 to 2018.
+Unfortunatelty it has been pretty difficult to get my hands on data for female soccer player salaries. There are a lot of articles on the internet that discuss the issue of female soccer players' compensatoin, but I have had a hard time finding the raw data that they used. I spoke with Georgie about this issue, and she suggested finding specific useful webpages that I could scrape to get the necessary data. I have found a few candidate websites, and plan on going to one of the CF's office hours in the near future to figure out my next steps. On the other hand, it has been pretty easy to get my hands on data for men's salaries. I have read in a file with MLS salaries from 2007 to 2018. This data was scraped from the MLS player's association, and I got it from data.world.com. 
+
+In searching for a solid dataset on the  NWSL player salaries, I also came across a really good dataset with data on all women's world cup results (1990-present) and members of those teams. I read this data in because it seems like a treasure trove. I am not 100% sure how I will use it and still need to explore it more, but it is great to have. These datasets are also from data.world.com, from a project called Women's World Cup Data. 
